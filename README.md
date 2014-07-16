@@ -11,7 +11,8 @@ This example shows how to deploy a war file using the [`jboss/wildfly` Docker im
 2. Place your `node-info.war` file in the same directory as your `Dockerfile`.
 3. Run the build with `docker build --tag=wildfly-app .`
 4. Run the container with `docker run -it -p 8080:8080 wildfly-app`. Application will be deployed on the container boot.
-5. Use `curl` to see the app working
+5. Use `curl` to see the app working:
+
         $ curl http://localhost:8080/node-info/
         Hostname: f740c76cd66c
         Java Runtime: OpenJDK Runtime Environment 1.7.0_60-mockbuild_2014_06_19_16_23-b00
