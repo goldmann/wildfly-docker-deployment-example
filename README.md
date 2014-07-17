@@ -1,6 +1,6 @@
 # Deployment with the `jboss/wildfly` Docker image
 
-This example shows how to deploy a war file using the [`jboss/wildfly` Docker image](https://registry.hub.docker.com/u/jboss/wildfly/).
+This example shows how to deploy a war file using the [`jboss/wildfly` Docker image](https://registry.hub.docker.com/u/jboss/wildfly/).  You can see the expanded node-info.war's contents [here](https://github.com/jlmitch5/jboss_wildfly_war_expanded)
 
 ## Instructions
 
