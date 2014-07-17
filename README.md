@@ -60,3 +60,6 @@ $ docker run -it wildfly-app
 09:03:28,638 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.1.0.Final "Kenny" started in 4679ms - Started 296 of 341 services (96 services are lazy, passive or on-demand)
 ```
 
+## Application source code
+
+You can find the `node-info.war` source code in the [goldmann/node-info](https://github.com/goldmann/node-info) repository.
