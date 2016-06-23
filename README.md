@@ -7,7 +7,7 @@ This example shows how to deploy a war file using the [`jboss/wildfly` Docker im
 1. Create `Dockerfile` with following content:
 
         FROM jboss/wildfly
-        ADD node-info.war /opt/wildfly/standalone/deployments/
+        ADD node-info.war /opt/jboss/wildfly/standalone/deployments/
 2. Place your `node-info.war` file in the same directory as your `Dockerfile`.
 3. Run the build with `docker build --tag=wildfly-app .`
 4. Run the container with `docker run -it -p 8080:8080 wildfly-app`. Application will be deployed on the container boot.
@@ -26,7 +26,7 @@ $ docker run -it wildfly-app
 
   JBoss Bootstrap Environment
 
-  JBOSS_HOME: /opt/wildfly
+  JBOSS_HOME: /opt/jboss/wildfly
 
   JAVA: java
 
@@ -42,7 +42,7 @@ $ docker run -it wildfly-app
 [SNIP]
 
 09:03:26,938 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015876: Starting deployment of "node-info.war" (runtime-name: "node-info.war")
-09:03:26,948 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) JBAS015012: Started FileSystemDeploymentService for directory /opt/wildfly/standalone/deployments
+09:03:26,948 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-4) JBAS015012: Started FileSystemDeploymentService for directory /opt/jboss/wildfly/standalone/deployments
 09:03:26,996 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
 09:03:27,064 WARN  [org.jboss.metadata.parser.jbossweb.JBossWebMetaDataParser] (MSC service thread 1-4) <replication-mode/> is no longer supported and will be ignored
 09:03:27,237 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.2.4.Final
