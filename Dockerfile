@@ -1,2 +1,2 @@
 FROM jboss/wildfly
-ADD node-info.war /opt/wildfly/standalone/deployments/
+ADD node-info.war /opt/jboss/wildfly/standalone/deployments/
